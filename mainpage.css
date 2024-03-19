@@ -1,0 +1,39 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css');
+
+/* reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+/* common style */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+section.main {
+  background: url('');
+  z-index: -1;
+  position: absolute;
+  inset: 0px;
+  background-image: url("https://ceo-cdn.baemin.com/optimize?src=https%3A%2F%2Fceo-cdn.baemin.com%2Fcdn%2Fceo-square%2Fproduction%2Fstatic%2Fsrc%2Fimages%2Fbusiness%2Fmain%2Fbusiness-hero-back.jpg%3Fver%3D85165fe470c88f655d886fd9cb5c69b7");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
