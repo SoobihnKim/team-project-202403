@@ -42,18 +42,15 @@ section.main {
 
 section.main .main-title {
   background: rgba(0, 0, 0, 0.4);
-  /* opacity: 0.4; */
   height: 420px;
 
   position: relative;
-  z-index: 1;
 }
 
 section.main .bb-logo {
   display: flex;
   justify-content: center;
   padding-top: 80px;
-  z-index: 2;
 }
 
 section.main .title{
@@ -120,6 +117,8 @@ section .list li span{
   /* background: violet;  */
   font-size: 20px;
   color: gray;
+  line-height: 1.3;
+  font-weight: 700;
   
   height: 110px;
   display: flex;
@@ -136,6 +135,7 @@ section .list li img{
 /* 공통 */
 
 /* <!-- //section service --> */
+
 section.service .list li em{ 
   /* background: orange; */
   font-size: 30px;
@@ -156,55 +156,6 @@ section.service .list li span{
 }
 
 /* <!-- //section service --> */
-
-/* <!-- //section growth --> */
-
-section.growth {
-  /* background: orange; */
-  width: 100%;
- 
-  background: rgb(241, 240, 240);
-
-
-  position: relative;
-}
-
-section.growth .title {
-  text-align: center;
-}
-
-section.growth img {
-  border-radius: 30px;
-  width: 100%;
-  margin: auto;
-}
-
-section.growth .growth-center {
-  width: 60%;
-  margin: auto;
-}
-
-section.growth .bottom {
-  font-weight: 700;
-  padding-top: 40px;
-  padding-left: 370px;
-  
-}
-
-section.growth .bottom em {
-  font-size: 30px;
-}
-
-section.growth .bottom p {
-  /* background: tomato; */
-  font-size: 20px;
-  color: gray;
-  padding-top: 20px;
-  
-}
-
-
-/* <!-- //section growth --> */
 
 
 /* <!-- //section solution --> */
@@ -257,7 +208,6 @@ section.solution .list li img{
   margin: auto;
 }
 
-
 /* <!-- //section solution --> */
 
 /* <!-- //section experience --> */
@@ -294,6 +244,54 @@ section.experience .list li img{
   position: absolute;
   bottom: 20px;
   right: 0px;
-
 }
 /* <!-- //section experience --> */
+
+
+/* <!-- //section growth --> */
+
+section.growth {
+  /* background: orange; */
+  width: 100%;
+  background: rgb(241, 240, 240);
+  position: relative;
+}
+
+section.growth .title {
+  text-align: center;
+}
+
+section.growth img {
+  border-radius: 30px;
+  width: 100%;
+  margin: auto;
+}
+
+section.growth .growth-center {
+  width: 60%;
+  margin: auto;
+}
+
+section.growth .bottom {
+  font-weight: 700;
+  padding-top: 40px;
+  padding-left: 370px;
+}
+
+section.growth .bottom em {
+  font-size: 30px;
+}
+
+section.growth .bottom p {
+  /* background: tomato; */
+  font-size: 20px;
+  color: gray;
+  padding-top: 20px;
+}
+
+/* <!-- //section growth --> */
+
+
+/* <!-- //section business는 공통에서 적용됨 --> */
+
+
