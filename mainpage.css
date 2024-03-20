@@ -27,13 +27,129 @@ input {
   clear: both;
 }
 
+/* section.main  */
+
 section.main {
-  background: url('');
-  z-index: -1;
-  position: absolute;
-  inset: 0px;
   background-image: url("https://ceo-cdn.baemin.com/optimize?src=https%3A%2F%2Fceo-cdn.baemin.com%2Fcdn%2Fceo-square%2Fproduction%2Fstatic%2Fsrc%2Fimages%2Fbusiness%2Fmain%2Fbusiness-hero-back.jpg%3Fver%3D85165fe470c88f655d886fd9cb5c69b7");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  height: 420px;
+
+  position: relative;
+  z-index: 1;
+  
+}
+
+section.main .main-title {
+  background: #000;
+  opacity: 0.4;
+  height: 420px;
+
+  position: relative;
+  z-index: -1;
+
+}
+
+section.main .bb-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+
+
+
+}
+
+section.main .title{
+  /* background: orange; */
+  font-size: 60px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 40px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* <!-- //section main -->  */
+
+/* <!-- //section service --> */
+section.service {
+  /* background: blue; */
+  width: 70%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+section.service .title {
+  /* border: 4px solid #000; */
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+section.service .list {
+  /* border: 4px solid #000; */
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+section.service .list li{ 
+  background: rgb(241, 240, 240);
+  border-radius: 30px ;
+  width: 45%;
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+section.service .list li div{
+  /* background: yellow;  */
+  width: 300px;
+  padding-left: 30px;
+}
+
+section.service .list li em{ 
+  /* background: orange; */
+  font-size: 30px;
+  font-weight: 700;
+
+  
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+section.service .list li span{
+  /* background: violet;  */
+  font-size: 20px;
+  color: gray;
+  
+  height: 110px;
+  display: flex;
+  
+
+}
+
+section.service .list li img{ 
+  /* background: #000; */
+  margin-right: 40px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  
+
+  
+
+
+
 }
