@@ -34,30 +34,26 @@ section.main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  width: 100%;
+  height: 420px;
+
+  position: relative;
+}
+
+section.main .main-title {
+  background: rgba(0, 0, 0, 0.4);
+  /* opacity: 0.4; */
   height: 420px;
 
   position: relative;
   z-index: 1;
-  
-}
-
-section.main .main-title {
-  background: #000;
-  opacity: 0.4;
-  height: 420px;
-
-  position: relative;
-  z-index: -1;
-
 }
 
 section.main .bb-logo {
   display: flex;
   justify-content: center;
   padding-top: 80px;
-
-
-
+  z-index: 2;
 }
 
 section.main .title{
@@ -66,25 +62,21 @@ section.main .title{
   color: #fff;
   font-weight: 700;
   line-height: 1.5;
-  margin: 40px 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  text-align: center;
+  padding: 30px;
 }
 
 /* <!-- //section main -->  */
 
-/* <!-- //section service --> */
-section.service {
+/*  공통  */
+section {
   /* background: blue; */
   width: 70%;
   margin: auto;
   padding-bottom: 100px;
 }
 
-section.service .title {
+section .title {
   /* border: 4px solid #000; */
   font-size: 40px;
   font-weight: 700;
@@ -93,36 +85,62 @@ section.service .title {
   padding-bottom: 50px;
 }
 
-section.service .list {
+section .list {
   /* border: 4px solid #000; */
-
   display: flex;
   justify-content: space-between;
-
 }
 
-section.service .list li{ 
+section .list li{ 
   background: rgb(241, 240, 240);
   border-radius: 30px ;
   width: 45%;
 
   display: flex;
   justify-content: space-between;
-  
 }
 
-section.service .list li div{
+section .list li div{
   /* background: yellow;  */
   width: 300px;
   padding-left: 30px;
 }
 
+section .list li em{ 
+  /* background: orange; */
+  font-size: 30px;
+  font-weight: 700;
+
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+section .list li span{
+  /* background: violet;  */
+  font-size: 20px;
+  color: gray;
+  
+  height: 110px;
+  display: flex;
+}
+
+section .list li img{ 
+  /* background: #000; */
+  margin-right: 40px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+/* 공통 */
+
+/* <!-- //section service --> */
 section.service .list li em{ 
   /* background: orange; */
   font-size: 30px;
   font-weight: 700;
 
-  
   height: 110px;
   display: flex;
   align-items: center;
@@ -135,21 +153,147 @@ section.service .list li span{
   
   height: 110px;
   display: flex;
-  
-
 }
 
-section.service .list li img{ 
-  /* background: #000; */
-  margin-right: 40px;
+/* <!-- //section service --> */
 
+/* <!-- //section growth --> */
+
+section.growth {
+  /* background: orange; */
+  width: 100%;
+ 
+  background: rgb(241, 240, 240);
+
+
+  position: relative;
+}
+
+section.growth .title {
+  text-align: center;
+}
+
+section.growth img {
+  border-radius: 30px;
+  width: 100%;
+  margin: auto;
+}
+
+section.growth .growth-center {
+  width: 60%;
+  margin: auto;
+}
+
+section.growth .bottom {
+  font-weight: 700;
+  padding-top: 40px;
+  padding-left: 370px;
+  
+}
+
+section.growth .bottom em {
+  font-size: 30px;
+}
+
+section.growth .bottom p {
+  /* background: tomato; */
+  font-size: 20px;
+  color: gray;
+  padding-top: 20px;
+  
+}
+
+
+/* <!-- //section growth --> */
+
+
+/* <!-- //section solution --> */
+section.solution {
+  background: rgb(241, 240, 240);
+  width: 100%;
+  }
+  section.solution .title {
+    width: 70%;
+    margin: auto;
+  }
+
+section.solution .list {
+  background: rgb(241, 240, 240);
+  width: 70%;
+  margin: auto;
+  
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: left;
-  
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  
+section.solution .list li {
+  background: #fff;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+section.solution .list li:nth-child(1),
+section.solution .list li:nth-child(2)
+ {margin-bottom: 30px; }
+
+section.solution .list li em {
+  /* background: orange; */
+  width: 400px;
+  line-height: 1.3;
+}
+section.solution .list li p {
+  /* background: orange; */
+  width: 400px;
+  line-height: 1.5;
+  color: gray;
+  font-weight: 700;
+}
+
+section.solution .list li img{
+  width: 400px;
+  height: 250px;
+  margin: auto;
+}
 
 
+/* <!-- //section solution --> */
+
+/* <!-- //section experience --> */
+section.experience .list li {
+  position: relative;
+}
+
+section.experience .list li div{
+  /* background: yellow;  */
+  width: 400px;
+  padding-left: 30px;
+}
+
+section.experience .list li em {
+  line-height: 1.5;
+  padding: 30px 0;
+}
+
+section.experience .list li span{
+  /* background: violet;  */
+  line-height: 1.2;
+  height: 80px;
+}
+
+section.experience .list .date{
+  /* background: yellow;  */
+  color: gray;
+  font-weight: 700;
+  width: 400px;
+  height: 50px;
+}
+
+section.experience .list li img{ 
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
 
 }
+/* <!-- //section experience --> */
