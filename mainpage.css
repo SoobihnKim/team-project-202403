@@ -47,6 +47,16 @@ section.main .main-title {
   position: relative;
 }
 
+section.main .main-title::after {
+  content: '';
+  background-image: url('img/underline\ img.webp');
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 20px;
+  
+}
+
 section.main .bb-logo {
   display: flex;
   justify-content: center;
@@ -218,18 +228,19 @@ section.experience .list li {
 section.experience .list li div{
   /* background: yellow;  */
   width: 400px;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 section.experience .list li em {
   line-height: 1.5;
-  padding: 30px 0;
+  padding: 80px 0;
 }
 
 section.experience .list li span{
   /* background: violet;  */
   line-height: 1.2;
   height: 80px;
+  font-size: 18px;
 }
 
 section.experience .list .date{
@@ -238,6 +249,7 @@ section.experience .list .date{
   font-weight: 700;
   width: 400px;
   height: 50px;
+  font-size: 14px;
 }
 
 section.experience .list li img{ 
@@ -292,6 +304,39 @@ section.growth .bottom p {
 /* <!-- //section growth --> */
 
 
-/* <!-- //section business는 공통에서 적용됨 --> */
+/* <!-- //section business --> */
+section.business .list li {
+  overflow: hidden;
+}
+
+section.business .list li img{ 
+  width: 200px;
+  height: auto;
+}
+
+section.business .list li div{
+  /* background: yellow;  */
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
 
 
+section.business .list li span{
+  /* background: violet;  */
+  line-height: 1.2;
+  font-size: 18px;
+  padding-bottom: 0px;
+  height: 100px;
+}
+
+section.business .list li p{ 
+  color: blue;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+section.business .list li p i{ 
+  margin-left: 10px;
+}
+ 
