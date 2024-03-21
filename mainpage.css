@@ -47,15 +47,12 @@ section.main .main-title {
   position: relative;
 }
 
-section.main .main-title::after {
-  content: '';
-  background-image: url('img/underline\ img.webp');
+section.main .main-title .underline {
   position: absolute;
-  background-repeat: no-repeat;
-  width: 160px;
-  height: 20px;
-  
+  bottom: 50px;
+  left: 35%;
 }
+
 
 section.main .bb-logo {
   display: flex;
